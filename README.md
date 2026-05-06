@@ -34,21 +34,15 @@ Here are demonstrations of the system running with different controllers:
 
 ### LQR Control
 
-<video src="videos/lqr_pendulum_.mp4" width="300" controls>
-  <a href="videos/lqr_pendulum_.mp4">View LQR Demo</a>
-</video>
+https://github.com/user-attachments/assets/67b9c8fa-9cf9-4b68-b97f-80f71a330034
 
 ### Soft Actor-Critic (SAC) Control
 
-<video src="videos/SAC_.mp4" width="300" controls>
-  <a href="videos/SAC_.mp4">View SAC Demo</a>
-</video>
+https://github.com/user-attachments/assets/48dc87b7-8e3e-41b1-96c2-5b272821629d
 
 ### Deep Deterministic Policy Gradient (DDPG) Control
 
-<video src="videos/DDPG_.mp4" width="300" controls>
-  <a href="videos/DDPG_.mp4">View DDPG Demo</a>
-</video>
+https://github.com/user-attachments/assets/c9809c6d-f873-4e72-b827-2b89e02e6914
 
 ---
 

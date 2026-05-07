@@ -61,10 +61,9 @@ The user interface is designed to be intuitive while exposing powerful control p
    - Ensure your Arduino is connected (if using hardware mode) and select the correct COM port from the dropdown.
    - Click the **Start** button to initialize the control loop.
 3. **Stopping Execution:** Click the **Stop** or **Emergency Stop** button to safely halt the pendulum and disable motor outputs.
-4. **Editing LQR Gains:** When LQR is selected, use the dynamic input fields to adjust the $Q$ and $R$ penalty matrices in real-time to observe changes in system stability.
+4. **Editing LQR Gains:** When LQR is selected, use the dynamic input fields to adjust the $K$ penalty matrices to observe changes in system stability.
 5. **Viewing Telemetry & Plots:** The dashboard displays live numerical telemetry. Switch to the plotting tabs to see scrolling, real-time graphs of the pendulum's angle, cart position, and control efforts.
-6. **Simulation Panel:** If no hardware is connected, enable the **Simulation Mode** to view the embedded Pygame representation of the cart-pole system reacting to your commands.
-7. **Training Agents:** Navigate to the RL Training tab, set your hyperparameters (episodes, batch size), and click **Train**. Progress and rewards are logged directly in the UI.
+6. **Training Agents:** Navigate to the RL Training tab, set your hyperparameters (episodes, batch size), and click **Train**. Progress and rewards are logged directly in the UI.
 
 ---
 
@@ -90,8 +89,7 @@ To launch the primary graphical interface, run:
 python main_GUI.py
 ```
 
-**What happens on launch?**
-The PyQt5 dashboard will open, initializing the multiprocessing queues. It will automatically detect available serial ports. From here, you can select your control mode, load pre-trained models, or start a simulation session.
+The PyQt5 dashboard will open, initializing the multiprocessing queues. From here, you can select your control mode, load pre-trained models, or start a simulation session.
 
 ---
 
@@ -102,7 +100,6 @@ To run this system on physical hardware, you need:
 - An **Arduino** microcontroller flashed with `inverted_pendulum_arduino.ino`.
 - Motor drivers and encoders wired to the specifications expected by the Arduino firmware.
 - A stable USB Serial connection to the host PC.
-- *(Optional)* If hardware is unavailable, the software will seamlessly fall back to the embedded simulation mode.
 
 ---
 
